@@ -167,9 +167,9 @@ function renderTimes() {
   shadowRef.querySelector('.time-distracting').textContent = formatTime(distractingSeconds) + ' distracting';
 }
 
-// Tick every second — increment the right counter based on this site's category
+// Tick every second — only if this page actually has focus
 function tick() {
-  if (!document.hidden) {
+  if (document.hasFocus()) {
     if (currentSiteCategory === 'productive') {
       productiveSeconds++;
     } else if (currentSiteCategory === 'distracting') {
@@ -187,10 +187,12 @@ if (!document.getElementById('pt-overlay-host')) {
   // Tick the display every second
   setInterval(tick, 1000);
 
+  // Re-sync when the page regains focus (picks up correct totals from storage)
+  window.addEventListener('focus', () => syncFromStorage());
+
   // Re-sync from storage whenever it changes
   chrome.storage.onChanged.addListener((changes, area) => {
     if (area === 'local') {
-      // Re-detect category in case site lists changed
       if (changes.productiveSites || changes.distractingSites) {
         detectCategory();
       }
