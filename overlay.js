@@ -134,7 +134,7 @@ function detectCategory() {
   });
 }
 
-// Sync from storage — sets the baseline numbers
+// Sync from storage — only accept values that are >= local (never jump backward)
 function syncFromStorage() {
   if (!shadowRef) return;
   const dateKey = getDateKey();
@@ -144,8 +144,8 @@ function syncFromStorage() {
     const dayData = data[storageKey] || { totalProductive: 0, totalDistracting: 0 };
     const { currentLevel } = getLevelInfo(totalXP);
 
-    productiveSeconds = dayData.totalProductive;
-    distractingSeconds = dayData.totalDistracting;
+    productiveSeconds = Math.max(productiveSeconds, dayData.totalProductive);
+    distractingSeconds = Math.max(distractingSeconds, dayData.totalDistracting);
 
     const levelEl = shadowRef.querySelector('.level');
     levelEl.textContent = currentLevel.level;
