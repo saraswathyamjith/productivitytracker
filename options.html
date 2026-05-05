@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productivity Tracker - Settings</title>
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Productivity Tracker Settings</h1>
+
+    <div class="columns">
+      <div class="column">
+        <h2 class="column-title productive">Productive Sites</h2>
+        <div class="add-form">
+          <input type="text" id="productiveInput" placeholder="e.g. github.com" />
+          <button id="addProductive" class="btn btn-productive">Add</button>
+        </div>
+        <ul class="site-list" id="productiveList"></ul>
+      </div>
+
+      <div class="column">
+        <h2 class="column-title distracting">Distracting Sites</h2>
+        <div class="add-form">
+          <input type="text" id="distractingInput" placeholder="e.g. youtube.com" />
+          <button id="addDistracting" class="btn btn-distracting">Add</button>
+        </div>
+        <ul class="site-list" id="distractingList"></ul>
+      </div>
+    </div>
+
+    <div class="danger-zone">
+      <h2 class="danger-title">Danger Zone</h2>
+      <p class="danger-text">Reset all tracking data and XP. This cannot be undone.</p>
+      <button id="resetBtn" class="btn btn-danger">Reset All Data</button>
+    </div>
+  </div>
+
+  <script src="options.js"></script>
+</body>
+</html>

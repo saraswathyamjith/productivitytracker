@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productivity Tracker</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="level-badge" id="levelBadge">1</div>
+      <div class="level-info">
+        <div class="level-title" id="levelTitle">Newbie</div>
+        <div class="level-number" id="levelNumber">Level 1</div>
+      </div>
+    </header>
+
+    <div class="xp-section">
+      <div class="xp-bar-container">
+        <div class="xp-bar" id="xpBar"></div>
+      </div>
+      <div class="xp-text" id="xpText">0 / 60 XP</div>
+    </div>
+
+    <div class="day-nav">
+      <button id="prevDay">&larr;</button>
+      <span id="dayLabel">Today</span>
+      <button id="nextDay">&rarr;</button>
+    </div>
+
+    <div class="stats-section">
+      <div class="stat productive">
+        <div class="stat-label">Productive</div>
+        <div class="stat-value" id="productiveTime">0m</div>
+      </div>
+      <div class="stat distracting">
+        <div class="stat-label">Distracting</div>
+        <div class="stat-value" id="distractingTime">0m</div>
+      </div>
+      <div class="stat xp-today">
+        <div class="stat-label">XP</div>
+        <div class="stat-value" id="xpToday">+0</div>
+      </div>
+    </div>
+
+    <div class="sites-section">
+      <h3 class="sites-title">Top Sites</h3>
+      <div class="sites-list" id="sitesList">
+        <div class="empty-state">No activity tracked yet today.</div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <a href="#" id="optionsLink">Settings</a>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
