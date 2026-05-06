@@ -41,7 +41,10 @@ function formatTime(seconds) {
 function getDateForOffset(offset) {
   const d = new Date();
   d.setDate(d.getDate() + offset);
-  return d.toISOString().split('T')[0];
+  const year = d.getFullYear();
+  const month = String(d.getMonth() + 1).padStart(2, '0');
+  const day = String(d.getDate()).padStart(2, '0');
+  return `${year}-${month}-${day}`;
 }
 
 function formatDayLabel(offset) {

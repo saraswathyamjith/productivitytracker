@@ -1,0 +1,986 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BF53099A2FAB09220066CE06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5309992FAB09220066CE06 /* AppDelegate.swift */; };
+		BF53099C2FAB09220066CE06 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF53099B2FAB09220066CE06 /* SceneDelegate.swift */; };
+		BF53099F2FAB09220066CE06 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = BF53099E2FAB09220066CE06 /* Base */; };
+		BF5309A22FAB09220066CE06 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = BF5309A12FAB09220066CE06 /* Base */; };
+		BF5309AB2FAB09220066CE06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5309AA2FAB09220066CE06 /* AppDelegate.swift */; };
+		BF5309AE2FAB09220066CE06 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = BF5309AD2FAB09220066CE06 /* Base */; };
+		BF5309B62FAB09220066CE06 /* Productivity Tracker (Safari) Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = BF5309B52FAB09220066CE06 /* Productivity Tracker (Safari) Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BF5309C02FAB09220066CE06 /* Productivity Tracker (Safari) Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = BF5309BF2FAB09220066CE06 /* Productivity Tracker (Safari) Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BF5309C62FAB09220066CE06 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = BF53098A2FAB09210066CE06 /* Base */; };
+		BF5309C72FAB09220066CE06 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = BF53098A2FAB09210066CE06 /* Base */; };
+		BF5309C82FAB09220066CE06 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BF53098B2FAB09210066CE06 /* Icon.png */; };
+		BF5309C92FAB09220066CE06 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BF53098B2FAB09210066CE06 /* Icon.png */; };
+		BF5309CA2FAB09220066CE06 /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = BF53098C2FAB09210066CE06 /* Style.css */; };
+		BF5309CB2FAB09220066CE06 /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = BF53098C2FAB09210066CE06 /* Style.css */; };
+		BF5309CC2FAB09220066CE06 /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = BF53098D2FAB09210066CE06 /* Script.js */; };
+		BF5309CD2FAB09220066CE06 /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = BF53098D2FAB09210066CE06 /* Script.js */; };
+		BF5309CE2FAB09220066CE06 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF53098E2FAB09210066CE06 /* ViewController.swift */; };
+		BF5309CF2FAB09220066CE06 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF53098E2FAB09210066CE06 /* ViewController.swift */; };
+		BF5309D02FAB09220066CE06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF53098F2FAB09220066CE06 /* Assets.xcassets */; };
+		BF5309D12FAB09220066CE06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF53098F2FAB09220066CE06 /* Assets.xcassets */; };
+		BF5309D22FAB09220066CE06 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5309912FAB09220066CE06 /* SafariWebExtensionHandler.swift */; };
+		BF5309D32FAB09220066CE06 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5309912FAB09220066CE06 /* SafariWebExtensionHandler.swift */; };
+		BF5309F02FAB09220066CE06 /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = BF5309E52FAB09220066CE06 /* popup.js */; };
+		BF5309F12FAB09220066CE06 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = BF5309E62FAB09220066CE06 /* background.js */; };
+		BF5309F22FAB09220066CE06 /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = BF5309E72FAB09220066CE06 /* popup.html */; };
+		BF5309F32FAB09220066CE06 /* options.js in Resources */ = {isa = PBXBuildFile; fileRef = BF5309E82FAB09220066CE06 /* options.js */; };
+		BF5309F42FAB09220066CE06 /* overlay.js in Resources */ = {isa = PBXBuildFile; fileRef = BF5309E92FAB09220066CE06 /* overlay.js */; };
+		BF5309F52FAB09220066CE06 /* overlay.css in Resources */ = {isa = PBXBuildFile; fileRef = BF5309EA2FAB09220066CE06 /* overlay.css */; };
+		BF5309F62FAB09220066CE06 /* icons in Resources */ = {isa = PBXBuildFile; fileRef = BF5309EB2FAB09220066CE06 /* icons */; };
+		BF5309F72FAB09220066CE06 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = BF5309EC2FAB09220066CE06 /* manifest.json */; };
+		BF5309F82FAB09220066CE06 /* options.html in Resources */ = {isa = PBXBuildFile; fileRef = BF5309ED2FAB09220066CE06 /* options.html */; };
+		BF5309F92FAB09220066CE06 /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = BF5309EE2FAB09220066CE06 /* popup.css */; };
+		BF5309FA2FAB09220066CE06 /* options.css in Resources */ = {isa = PBXBuildFile; fileRef = BF5309EF2FAB09220066CE06 /* options.css */; };
+		BF5309FB2FAB09220066CE06 /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = BF5309E52FAB09220066CE06 /* popup.js */; };
+		BF5309FC2FAB09220066CE06 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = BF5309E62FAB09220066CE06 /* background.js */; };
+		BF5309FD2FAB09220066CE06 /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = BF5309E72FAB09220066CE06 /* popup.html */; };
+		BF5309FE2FAB09220066CE06 /* options.js in Resources */ = {isa = PBXBuildFile; fileRef = BF5309E82FAB09220066CE06 /* options.js */; };
+		BF5309FF2FAB09220066CE06 /* overlay.js in Resources */ = {isa = PBXBuildFile; fileRef = BF5309E92FAB09220066CE06 /* overlay.js */; };
+		BF530A002FAB09220066CE06 /* overlay.css in Resources */ = {isa = PBXBuildFile; fileRef = BF5309EA2FAB09220066CE06 /* overlay.css */; };
+		BF530A012FAB09220066CE06 /* icons in Resources */ = {isa = PBXBuildFile; fileRef = BF5309EB2FAB09220066CE06 /* icons */; };
+		BF530A022FAB09220066CE06 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = BF5309EC2FAB09220066CE06 /* manifest.json */; };
+		BF530A032FAB09220066CE06 /* options.html in Resources */ = {isa = PBXBuildFile; fileRef = BF5309ED2FAB09220066CE06 /* options.html */; };
+		BF530A042FAB09220066CE06 /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = BF5309EE2FAB09220066CE06 /* popup.css */; };
+		BF530A052FAB09220066CE06 /* options.css in Resources */ = {isa = PBXBuildFile; fileRef = BF5309EF2FAB09220066CE06 /* options.css */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BF5309B72FAB09220066CE06 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF5309832FAB09210066CE06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF5309B42FAB09220066CE06;
+			remoteInfo = "Productivity Tracker (Safari) Extension (iOS)";
+		};
+		BF5309C12FAB09220066CE06 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF5309832FAB09210066CE06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF5309BE2FAB09220066CE06;
+			remoteInfo = "Productivity Tracker (Safari) Extension (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BF5309D92FAB09220066CE06 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BF5309B62FAB09220066CE06 /* Productivity Tracker (Safari) Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF5309E02FAB09220066CE06 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BF5309C02FAB09220066CE06 /* Productivity Tracker (Safari) Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		BF53098A2FAB09210066CE06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = ../Base.lproj/Main.html; sourceTree = "<group>"; };
+		BF53098B2FAB09210066CE06 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		BF53098C2FAB09210066CE06 /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		BF53098D2FAB09210066CE06 /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		BF53098E2FAB09210066CE06 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BF53098F2FAB09220066CE06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BF5309912FAB09220066CE06 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		BF5309962FAB09220066CE06 /* Productivity Tracker (Safari).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Productivity Tracker (Safari).app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF5309992FAB09220066CE06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BF53099B2FAB09220066CE06 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BF53099E2FAB09220066CE06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BF5309A12FAB09220066CE06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BF5309A32FAB09220066CE06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF5309A82FAB09220066CE06 /* Productivity Tracker (Safari).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Productivity Tracker (Safari).app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF5309AA2FAB09220066CE06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BF5309AD2FAB09220066CE06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BF5309AF2FAB09220066CE06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF5309B02FAB09220066CE06 /* Productivity Tracker (Safari).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Productivity Tracker (Safari).entitlements"; sourceTree = "<group>"; };
+		BF5309B52FAB09220066CE06 /* Productivity Tracker (Safari) Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Productivity Tracker (Safari) Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF5309BA2FAB09220066CE06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF5309BF2FAB09220066CE06 /* Productivity Tracker (Safari) Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Productivity Tracker (Safari) Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF5309C42FAB09220066CE06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF5309C52FAB09220066CE06 /* Productivity Tracker (Safari).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Productivity Tracker (Safari).entitlements"; sourceTree = "<group>"; };
+		BF5309E52FAB09220066CE06 /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = popup.js; path = "../../../productivitytracker-safari/popup.js"; sourceTree = "<group>"; };
+		BF5309E62FAB09220066CE06 /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = background.js; path = "../../../productivitytracker-safari/background.js"; sourceTree = "<group>"; };
+		BF5309E72FAB09220066CE06 /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = popup.html; path = "../../../productivitytracker-safari/popup.html"; sourceTree = "<group>"; };
+		BF5309E82FAB09220066CE06 /* options.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = options.js; path = "../../../productivitytracker-safari/options.js"; sourceTree = "<group>"; };
+		BF5309E92FAB09220066CE06 /* overlay.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = overlay.js; path = "../../../productivitytracker-safari/overlay.js"; sourceTree = "<group>"; };
+		BF5309EA2FAB09220066CE06 /* overlay.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = overlay.css; path = "../../../productivitytracker-safari/overlay.css"; sourceTree = "<group>"; };
+		BF5309EB2FAB09220066CE06 /* icons */ = {isa = PBXFileReference; lastKnownFileType = folder; name = icons; path = "../../../productivitytracker-safari/icons"; sourceTree = "<group>"; };
+		BF5309EC2FAB09220066CE06 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = "../../../productivitytracker-safari/manifest.json"; sourceTree = "<group>"; };
+		BF5309ED2FAB09220066CE06 /* options.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = options.html; path = "../../../productivitytracker-safari/options.html"; sourceTree = "<group>"; };
+		BF5309EE2FAB09220066CE06 /* popup.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = popup.css; path = "../../../productivitytracker-safari/popup.css"; sourceTree = "<group>"; };
+		BF5309EF2FAB09220066CE06 /* options.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = options.css; path = "../../../productivitytracker-safari/options.css"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BF5309932FAB09220066CE06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF5309A52FAB09220066CE06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF5309B22FAB09220066CE06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF5309BC2FAB09220066CE06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BF5309822FAB09210066CE06 = {
+			isa = PBXGroup;
+			children = (
+				BF5309872FAB09210066CE06 /* Shared (App) */,
+				BF5309902FAB09220066CE06 /* Shared (Extension) */,
+				BF5309982FAB09220066CE06 /* iOS (App) */,
+				BF5309A92FAB09220066CE06 /* macOS (App) */,
+				BF5309B92FAB09220066CE06 /* iOS (Extension) */,
+				BF5309C32FAB09220066CE06 /* macOS (Extension) */,
+				BF5309972FAB09220066CE06 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BF5309872FAB09210066CE06 /* Shared (App) */ = {
+			isa = PBXGroup;
+			children = (
+				BF53098E2FAB09210066CE06 /* ViewController.swift */,
+				BF53098F2FAB09220066CE06 /* Assets.xcassets */,
+				BF5309882FAB09210066CE06 /* Resources */,
+			);
+			path = "Shared (App)";
+			sourceTree = "<group>";
+		};
+		BF5309882FAB09210066CE06 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BF5309892FAB09210066CE06 /* Main.html */,
+				BF53098B2FAB09210066CE06 /* Icon.png */,
+				BF53098C2FAB09210066CE06 /* Style.css */,
+				BF53098D2FAB09210066CE06 /* Script.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BF5309902FAB09220066CE06 /* Shared (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				BF5309E42FAB09220066CE06 /* Resources */,
+				BF5309912FAB09220066CE06 /* SafariWebExtensionHandler.swift */,
+			);
+			path = "Shared (Extension)";
+			sourceTree = "<group>";
+		};
+		BF5309972FAB09220066CE06 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF5309962FAB09220066CE06 /* Productivity Tracker (Safari).app */,
+				BF5309A82FAB09220066CE06 /* Productivity Tracker (Safari).app */,
+				BF5309B52FAB09220066CE06 /* Productivity Tracker (Safari) Extension.appex */,
+				BF5309BF2FAB09220066CE06 /* Productivity Tracker (Safari) Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF5309982FAB09220066CE06 /* iOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				BF5309992FAB09220066CE06 /* AppDelegate.swift */,
+				BF53099B2FAB09220066CE06 /* SceneDelegate.swift */,
+				BF53099D2FAB09220066CE06 /* LaunchScreen.storyboard */,
+				BF5309A02FAB09220066CE06 /* Main.storyboard */,
+				BF5309A32FAB09220066CE06 /* Info.plist */,
+			);
+			path = "iOS (App)";
+			sourceTree = "<group>";
+		};
+		BF5309A92FAB09220066CE06 /* macOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				BF5309AA2FAB09220066CE06 /* AppDelegate.swift */,
+				BF5309AC2FAB09220066CE06 /* Main.storyboard */,
+				BF5309AF2FAB09220066CE06 /* Info.plist */,
+				BF5309B02FAB09220066CE06 /* Productivity Tracker (Safari).entitlements */,
+			);
+			path = "macOS (App)";
+			sourceTree = "<group>";
+		};
+		BF5309B92FAB09220066CE06 /* iOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				BF5309BA2FAB09220066CE06 /* Info.plist */,
+			);
+			path = "iOS (Extension)";
+			sourceTree = "<group>";
+		};
+		BF5309C32FAB09220066CE06 /* macOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				BF5309C42FAB09220066CE06 /* Info.plist */,
+				BF5309C52FAB09220066CE06 /* Productivity Tracker (Safari).entitlements */,
+			);
+			path = "macOS (Extension)";
+			sourceTree = "<group>";
+		};
+		BF5309E42FAB09220066CE06 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BF5309E52FAB09220066CE06 /* popup.js */,
+				BF5309E62FAB09220066CE06 /* background.js */,
+				BF5309E72FAB09220066CE06 /* popup.html */,
+				BF5309E82FAB09220066CE06 /* options.js */,
+				BF5309E92FAB09220066CE06 /* overlay.js */,
+				BF5309EA2FAB09220066CE06 /* overlay.css */,
+				BF5309EB2FAB09220066CE06 /* icons */,
+				BF5309EC2FAB09220066CE06 /* manifest.json */,
+				BF5309ED2FAB09220066CE06 /* options.html */,
+				BF5309EE2FAB09220066CE06 /* popup.css */,
+				BF5309EF2FAB09220066CE06 /* options.css */,
+			);
+			name = Resources;
+			path = "Shared (Extension)";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BF5309952FAB09220066CE06 /* Productivity Tracker (Safari) (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF5309DA2FAB09220066CE06 /* Build configuration list for PBXNativeTarget "Productivity Tracker (Safari) (iOS)" */;
+			buildPhases = (
+				BF5309922FAB09220066CE06 /* Sources */,
+				BF5309932FAB09220066CE06 /* Frameworks */,
+				BF5309942FAB09220066CE06 /* Resources */,
+				BF5309D92FAB09220066CE06 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF5309B82FAB09220066CE06 /* PBXTargetDependency */,
+			);
+			name = "Productivity Tracker (Safari) (iOS)";
+			productName = "Productivity Tracker (Safari) (iOS)";
+			productReference = BF5309962FAB09220066CE06 /* Productivity Tracker (Safari).app */;
+			productType = "com.apple.product-type.application";
+		};
+		BF5309A72FAB09220066CE06 /* Productivity Tracker (Safari) (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF5309E12FAB09220066CE06 /* Build configuration list for PBXNativeTarget "Productivity Tracker (Safari) (macOS)" */;
+			buildPhases = (
+				BF5309A42FAB09220066CE06 /* Sources */,
+				BF5309A52FAB09220066CE06 /* Frameworks */,
+				BF5309A62FAB09220066CE06 /* Resources */,
+				BF5309E02FAB09220066CE06 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF5309C22FAB09220066CE06 /* PBXTargetDependency */,
+			);
+			name = "Productivity Tracker (Safari) (macOS)";
+			productName = "Productivity Tracker (Safari) (macOS)";
+			productReference = BF5309A82FAB09220066CE06 /* Productivity Tracker (Safari).app */;
+			productType = "com.apple.product-type.application";
+		};
+		BF5309B42FAB09220066CE06 /* Productivity Tracker (Safari) Extension (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF5309D62FAB09220066CE06 /* Build configuration list for PBXNativeTarget "Productivity Tracker (Safari) Extension (iOS)" */;
+			buildPhases = (
+				BF5309B12FAB09220066CE06 /* Sources */,
+				BF5309B22FAB09220066CE06 /* Frameworks */,
+				BF5309B32FAB09220066CE06 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Productivity Tracker (Safari) Extension (iOS)";
+			productName = "Productivity Tracker (Safari) Extension (iOS)";
+			productReference = BF5309B52FAB09220066CE06 /* Productivity Tracker (Safari) Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		BF5309BE2FAB09220066CE06 /* Productivity Tracker (Safari) Extension (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF5309DD2FAB09220066CE06 /* Build configuration list for PBXNativeTarget "Productivity Tracker (Safari) Extension (macOS)" */;
+			buildPhases = (
+				BF5309BB2FAB09220066CE06 /* Sources */,
+				BF5309BC2FAB09220066CE06 /* Frameworks */,
+				BF5309BD2FAB09220066CE06 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Productivity Tracker (Safari) Extension (macOS)";
+			productName = "Productivity Tracker (Safari) Extension (macOS)";
+			productReference = BF5309BF2FAB09220066CE06 /* Productivity Tracker (Safari) Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BF5309832FAB09210066CE06 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					BF5309952FAB09220066CE06 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					BF5309A72FAB09220066CE06 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					BF5309B42FAB09220066CE06 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					BF5309BE2FAB09220066CE06 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = BF5309862FAB09210066CE06 /* Build configuration list for PBXProject "Productivity Tracker (Safari)" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BF5309822FAB09210066CE06;
+			productRefGroup = BF5309972FAB09220066CE06 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BF5309952FAB09220066CE06 /* Productivity Tracker (Safari) (iOS) */,
+				BF5309A72FAB09220066CE06 /* Productivity Tracker (Safari) (macOS) */,
+				BF5309B42FAB09220066CE06 /* Productivity Tracker (Safari) Extension (iOS) */,
+				BF5309BE2FAB09220066CE06 /* Productivity Tracker (Safari) Extension (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BF5309942FAB09220066CE06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF5309C82FAB09220066CE06 /* Icon.png in Resources */,
+				BF53099F2FAB09220066CE06 /* Base in Resources */,
+				BF5309C62FAB09220066CE06 /* Base in Resources */,
+				BF5309CC2FAB09220066CE06 /* Script.js in Resources */,
+				BF5309D02FAB09220066CE06 /* Assets.xcassets in Resources */,
+				BF5309A22FAB09220066CE06 /* Base in Resources */,
+				BF5309CA2FAB09220066CE06 /* Style.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF5309A62FAB09220066CE06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF5309C92FAB09220066CE06 /* Icon.png in Resources */,
+				BF5309CB2FAB09220066CE06 /* Style.css in Resources */,
+				BF5309AE2FAB09220066CE06 /* Base in Resources */,
+				BF5309CD2FAB09220066CE06 /* Script.js in Resources */,
+				BF5309D12FAB09220066CE06 /* Assets.xcassets in Resources */,
+				BF5309C72FAB09220066CE06 /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF5309B32FAB09220066CE06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF530A042FAB09220066CE06 /* popup.css in Resources */,
+				BF530A002FAB09220066CE06 /* overlay.css in Resources */,
+				BF5309FC2FAB09220066CE06 /* background.js in Resources */,
+				BF5309FE2FAB09220066CE06 /* options.js in Resources */,
+				BF5309FF2FAB09220066CE06 /* overlay.js in Resources */,
+				BF530A022FAB09220066CE06 /* manifest.json in Resources */,
+				BF5309FD2FAB09220066CE06 /* popup.html in Resources */,
+				BF530A012FAB09220066CE06 /* icons in Resources */,
+				BF5309FB2FAB09220066CE06 /* popup.js in Resources */,
+				BF530A052FAB09220066CE06 /* options.css in Resources */,
+				BF530A032FAB09220066CE06 /* options.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF5309BD2FAB09220066CE06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF5309F92FAB09220066CE06 /* popup.css in Resources */,
+				BF5309F52FAB09220066CE06 /* overlay.css in Resources */,
+				BF5309F12FAB09220066CE06 /* background.js in Resources */,
+				BF5309F32FAB09220066CE06 /* options.js in Resources */,
+				BF5309F42FAB09220066CE06 /* overlay.js in Resources */,
+				BF5309F72FAB09220066CE06 /* manifest.json in Resources */,
+				BF5309F22FAB09220066CE06 /* popup.html in Resources */,
+				BF5309F62FAB09220066CE06 /* icons in Resources */,
+				BF5309F02FAB09220066CE06 /* popup.js in Resources */,
+				BF5309FA2FAB09220066CE06 /* options.css in Resources */,
+				BF5309F82FAB09220066CE06 /* options.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BF5309922FAB09220066CE06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF5309CE2FAB09220066CE06 /* ViewController.swift in Sources */,
+				BF53099A2FAB09220066CE06 /* AppDelegate.swift in Sources */,
+				BF53099C2FAB09220066CE06 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF5309A42FAB09220066CE06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF5309CF2FAB09220066CE06 /* ViewController.swift in Sources */,
+				BF5309AB2FAB09220066CE06 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF5309B12FAB09220066CE06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF5309D22FAB09220066CE06 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF5309BB2FAB09220066CE06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF5309D32FAB09220066CE06 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BF5309B82FAB09220066CE06 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF5309B42FAB09220066CE06 /* Productivity Tracker (Safari) Extension (iOS) */;
+			targetProxy = BF5309B72FAB09220066CE06 /* PBXContainerItemProxy */;
+		};
+		BF5309C22FAB09220066CE06 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF5309BE2FAB09220066CE06 /* Productivity Tracker (Safari) Extension (macOS) */;
+			targetProxy = BF5309C12FAB09220066CE06 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BF5309892FAB09210066CE06 /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF53098A2FAB09210066CE06 /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+		BF53099D2FAB09220066CE06 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF53099E2FAB09220066CE06 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		BF5309A02FAB09220066CE06 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF5309A12FAB09220066CE06 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BF5309AC2FAB09220066CE06 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF5309AD2FAB09220066CE06 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BF5309D42FAB09220066CE06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BF5309D52FAB09220066CE06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		BF5309D72FAB09220066CE06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Productivity Tracker (Safari) Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourCompany.Productivity-Tracker--Safari-.Extension";
+				PRODUCT_NAME = "Productivity Tracker (Safari) Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BF5309D82FAB09220066CE06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Productivity Tracker (Safari) Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourCompany.Productivity-Tracker--Safari-.Extension";
+				PRODUCT_NAME = "Productivity Tracker (Safari) Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BF5309DB2FAB09220066CE06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Productivity Tracker (Safari)";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourCompany.Productivity-Tracker--Safari-";
+				PRODUCT_NAME = "Productivity Tracker (Safari)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BF5309DC2FAB09220066CE06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Productivity Tracker (Safari)";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourCompany.Productivity-Tracker--Safari-";
+				PRODUCT_NAME = "Productivity Tracker (Safari)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BF5309DE2FAB09220066CE06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/Productivity Tracker (Safari).entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Productivity Tracker (Safari) Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourCompany.Productivity-Tracker--Safari-.Extension";
+				PRODUCT_NAME = "Productivity Tracker (Safari) Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		BF5309DF2FAB09220066CE06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/Productivity Tracker (Safari).entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Productivity Tracker (Safari) Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourCompany.Productivity-Tracker--Safari-.Extension";
+				PRODUCT_NAME = "Productivity Tracker (Safari) Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		BF5309E22FAB09220066CE06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "macOS (App)/Productivity Tracker (Safari).entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Productivity Tracker (Safari)";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourCompany.Productivity-Tracker--Safari-";
+				PRODUCT_NAME = "Productivity Tracker (Safari)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		BF5309E32FAB09220066CE06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "macOS (App)/Productivity Tracker (Safari).entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Productivity Tracker (Safari)";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourCompany.Productivity-Tracker--Safari-";
+				PRODUCT_NAME = "Productivity Tracker (Safari)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BF5309862FAB09210066CE06 /* Build configuration list for PBXProject "Productivity Tracker (Safari)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF5309D42FAB09220066CE06 /* Debug */,
+				BF5309D52FAB09220066CE06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF5309D62FAB09220066CE06 /* Build configuration list for PBXNativeTarget "Productivity Tracker (Safari) Extension (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF5309D72FAB09220066CE06 /* Debug */,
+				BF5309D82FAB09220066CE06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF5309DA2FAB09220066CE06 /* Build configuration list for PBXNativeTarget "Productivity Tracker (Safari) (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF5309DB2FAB09220066CE06 /* Debug */,
+				BF5309DC2FAB09220066CE06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF5309DD2FAB09220066CE06 /* Build configuration list for PBXNativeTarget "Productivity Tracker (Safari) Extension (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF5309DE2FAB09220066CE06 /* Debug */,
+				BF5309DF2FAB09220066CE06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF5309E12FAB09220066CE06 /* Build configuration list for PBXNativeTarget "Productivity Tracker (Safari) (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF5309E22FAB09220066CE06 /* Debug */,
+				BF5309E32FAB09220066CE06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BF5309832FAB09210066CE06 /* Project object */;
+}
