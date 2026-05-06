@@ -191,6 +191,9 @@ if (!document.getElementById('pt-overlay-host')) {
   // Tick the display every second
   setInterval(tick, 1000);
 
+  // Periodically sync from storage so unfocused windows stay current
+  setInterval(syncFromStorage, 5000);
+
   // Re-sync when the page regains focus (picks up correct totals from storage)
   window.addEventListener('focus', () => syncFromStorage());
 
